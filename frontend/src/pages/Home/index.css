@@ -1,22 +1,24 @@
-:root{
+:root {
     --primary-color: #B22234;
     --secundary-color: #3C3B6E;
     --terciary-color: #FFFFFF;
 }
 
+/* ********** SIDEBAR STYLES ********** */
 .home-container {
     width: 100vw;
     height: 100vh;
+    display: flex;
 }
 
-.home-sidebar{
-    width: 20%;
+.home-sidebar {
+    width: 25%;
     height: 100%;
     background-color: var(--secundary-color);
     padding: 20px 30px;
 }
 
-.sidebar-title h1{
+.sidebar-title h1 {
     font-size: 1.6rem;
     color: var(--terciary-color);
     padding-bottom: 20px;
@@ -26,7 +28,7 @@
     text-align: center;
 }
 
-.sidebar-title img{
+.sidebar-title img {
     width: 50px;
     margin-left: 10px;
 }
@@ -43,9 +45,15 @@
     height: 10%;
 }
 
-.sidebar-footer p{
+.sidebar-footer p {
     color: var(--primary-color);
     margin: 0px;
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+/* ********** MAIN STYLES ********** */
+
+.home-main {
+    width: 100%;
 }
