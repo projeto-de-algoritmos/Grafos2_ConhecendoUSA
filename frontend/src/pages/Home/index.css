@@ -1,0 +1,51 @@
+:root{
+    --primary-color: #B22234;
+    --secundary-color: #3C3B6E;
+    --terciary-color: #FFFFFF;
+}
+
+.home-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-sidebar{
+    width: 20%;
+    height: 100%;
+    background-color: var(--secundary-color);
+    padding: 20px 30px;
+}
+
+.sidebar-title h1{
+    font-size: 1.6rem;
+    color: var(--terciary-color);
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar-title img{
+    width: 50px;
+    margin-left: 10px;
+}
+
+.sidebar-header {
+    height: 20%;
+}
+
+.sidebar-results {
+    height: 60%;
+}
+
+.sidebar-footer {
+    height: 10%;
+}
+
+.sidebar-footer p{
+    color: var(--primary-color);
+    margin: 0px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
