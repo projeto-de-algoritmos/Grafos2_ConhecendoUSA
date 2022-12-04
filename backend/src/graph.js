@@ -45,6 +45,7 @@ let shortestDistanceNode = (distances, visited) => {
 };
 
 function findShortestPath(startNode, endNode) {
+  init();
 
   let distances = {};
   // distances[endNode] = "Infinity";
@@ -153,9 +154,13 @@ function findShortestPath(startNode, endNode) {
 
 }
 
+module.exports = {
+  findShortestPath
+}
+
 // var testOrigin = cities.findIndex(p => p.zipcode == "98501");
 // var testDest = cities.findIndex(p => p.zipcode == "87501");
-init();
+// init();
 // console.log(cities[0].dist['30301']);
-out = findShortestPath('98501', '87501');
-console.log(out);
+// out = findShortestPath('98501', '87501');
+// console.log(out);

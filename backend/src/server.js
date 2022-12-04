@@ -1,5 +1,6 @@
 const express = require('express');
 const zipcodes = require('zipcodes');
+const { findShortestPath } = require('./graph');
 
 const app = express();
 
@@ -43,6 +44,18 @@ app.get('/local/name/:name/state/:state', (request, response, next) => {
     }
 });
 
+/* ********** Get Short path by Dijkstra ********** */
+app.get('/shortpath/start/:zipcodestart/end/:zipcodeend', (request, response, next) => {
+    console.log('Get Shortest Path');
+    const { zipcodestart, zipcodeend } = request.params;
+    try {
+        var result = findShortestPath(zipcodestart,zipcodeend);
+        response.json(result);
+    } catch (error) {
+        console.log('Get Shortest Path(ERROR): ');
+        next(error);
+    }
+});
 
 
 app.listen(8080, () => {
