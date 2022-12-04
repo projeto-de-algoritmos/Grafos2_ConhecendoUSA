@@ -37,6 +37,22 @@
     height: 20%;
 }
 
+button {
+    padding: 8px 30px;
+    background-color: var(--terciary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    border: none !important;
+    border-radius: 5px !important;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: var(--primary-color);
+    color: var(--terciary-color);
+}
+
 .sidebar-results {
     height: 60%;
 }
