@@ -139,6 +139,77 @@ exports.cities = [
             //'73301'
         ]
     },
+    {
+        state: 'ND',
+        name: 'Bismarck',
+        zipcode: '58501',
+        edges: [
+            '59601', // Helena - Montana - MT
+            '57501', // Pierre - South Dakote  - SD
+            '55101' // Saint Paul - Minnesota - MN
+        ]
+    },
+    {
+        state: 'SD',
+        name: 'Pierre',
+        zipcode: '57501',
+        edges: [
+            '58501', // Bismarck - North Dakota
+            '59601', // Helena - Montana - MT
+            '82001', // Cheyenne - WY
+            '68501', // Lincoln - Nebraska - NE
+            '50301', // Des moines - Iowa - IA
+            '55101' // Saint Paul - Minnesota - MN
+        ]
+    },
+    {
+        state: 'NE',
+        name: 'Lincoln',
+        zipcode: '68501',
+        edges: [
+            '57501', // Pierre - South Dakota - SD
+            '82001', // Cheyenne - WY
+            '80201', // Denver - Colorado - CO
+            '66601', // Tokepa - Kansas - KS
+            '65101', // Jefferson City - Missouri - MO
+            '50301', // Des moines - Iowa - IA
+        ]
+    },
+    {
+        state: 'KS',
+        name: 'Topeka',
+        zipcode: '66601',
+        edges: [
+            '68501', // Lincoln - Nebraska - NE
+            '80201', // Denver - Colorado - CO
+            '73101', // Oklahoma City - Oklahoma - OK
+            '65101', // Jefferson City - Missouri - MO
+        ]
+    },
+    {
+        state: 'OK',
+        name: 'Oklahoma City',
+        zipcode: '73101',
+        edges: [
+            '66601', // Tokepa - Kansas - KS
+            '80201', // Denver - Colorado - CO
+            '87501', // Santa fé - New México - NM
+            '73301', // Austin - Texas - TX
+            '72201', // Little Rock - Arkansas - AR
+            '65101', // Jefferson City - Missouri - MO
+        ]
+    },
+    {
+        state: 'TX',
+        name: 'Austin',
+        zipcode: '73301',
+        edges: [
+            '73101', // Oklahoma City - Oklahoma - OK
+            '87501', // Santa fé - New México - NM
+            '70801', // Baton Rouge - Lousiana - LA
+            '72201', // Little Rock - Arkansas - AR
+        ]
+    },
     // {
     //     state: '',
     //     name: '',

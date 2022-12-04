@@ -1,8 +1,11 @@
 const express = require('express');
+const cors = require('cors')
 const zipcodes = require('zipcodes');
 const { findShortestPath } = require('./graph');
+const { cities } = require('./database/states');
 
 const app = express();
+app.use(cors());
 
 /* ********** Local by ZipCode ********** */
 app.get('/local/zipcode/:zip_code', (request, response, next) => {
@@ -16,6 +19,7 @@ app.get('/local/zipcode/:zip_code', (request, response, next) => {
         next(error);
     }
 });
+
 
 /* ********** Distance by ZipCodes ********** */
 app.get('/distance/origin/:origin/destiny/:destiny', (request, response, next) => {
@@ -49,7 +53,7 @@ app.get('/shortpath/start/:zipcodestart/end/:zipcodeend', (request, response, ne
     console.log('Get Shortest Path');
     const { zipcodestart, zipcodeend } = request.params;
     try {
-        var result = findShortestPath(zipcodestart,zipcodeend);
+        var result = findShortestPath(zipcodestart, zipcodeend);
         response.json(result);
     } catch (error) {
         console.log('Get Shortest Path(ERROR): ');
@@ -57,6 +61,15 @@ app.get('/shortpath/start/:zipcodestart/end/:zipcodeend', (request, response, ne
     }
 });
 
+app.get('/database/cities', (request, response, next) => {
+    console.log('Get all cities');
+    try {
+        response.json(cities);
+    } catch (error) {
+        console.log('Get all cities(ERROR): ');
+        next(error);
+    }
+})
 
 app.listen(8080, () => {
     console.log('Listening in 8080')
