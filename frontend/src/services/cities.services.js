@@ -8,5 +8,9 @@ export async function GetDijkstraResult(zipcodestart, zipcodeend) {
     return api.get(`/shortpath/start/${zipcodestart}/end/${zipcodeend}`);
 }
 
+export async function GetDistance(origin, destiny) {
+    return api.get(`/distance/origin/${origin}/destiny/${destiny}`);
+}
+
 
 

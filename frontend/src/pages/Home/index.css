@@ -55,6 +55,70 @@ button:hover {
 
 .sidebar-results {
     height: 60%;
+    overflow-y: auto;
+}
+
+.sidebar-results .header{
+    background-color: var(--terciary-color);
+    margin: 0px !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+
+.sidebar-results .header p{
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    background-color: var(--terciary-color);
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0px !important;
+}
+
+.sidebar-results .routes{
+    background-color: var(--terciary-color);
+    padding: 5px 10px;
+}
+
+.sidebar-results .routes p{
+    background-color: var(--terciary-color);
+    margin: 0px !important;
+    padding: 0px !important;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.sidebar-results .routes #start span{
+    font-weight: 600;
+    color: var(--secundary-color);
+}
+
+.sidebar-results .routes #end span{
+    font-weight: 600;
+    color: var(--secundary-color);
+}
+
+.sidebar-results .routes #distance span{
+    font-weight: 600;
+    color: var(--secundary-color);
+}
+
+.sidebar-results .footer {
+    background-color: var(--terciary-color);
+    padding: 15px 10px 5px 10px;
+    font-weight: 600;
+    color: var(--secundary-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.sidebar-results .footer span {
+    background-color: var(--terciary-color);
+    padding: 15px 10px 5px 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--primary-color);
 }
 
 .sidebar-footer {
