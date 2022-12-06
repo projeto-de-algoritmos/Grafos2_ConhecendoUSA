@@ -17,7 +17,19 @@ O projeto em questão se trata de uma aplicação onde através da implementaç�
 Na aplicação o usuário poderá escolher entre uma cidade capital de origem e outra de destino. Feito isso será exibido uma marcação das cidades capitais a serem percorridas para chegar ao destino
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+#### Página Inicial
+<img src="assets/img05.png" width="700px"/>
+
+#### Menor Caminho entre Olympia - WA  e Augusta - ME
+<img src="assets/img01.png" width="700px"/>
+</br>
+<img src="assets/img02.png" width="700px"/>
+
+#### Menor Caminho entre Olympia - WA  e Montgomery - AL
+<img src="assets/img03.png" width="700px"/>
+
+#### Menor Caminho entre Olympia - WA  e Helena - MT
+<img src="assets/img04.png" width="700px"/>
 
 ## Instalação 
 **Linguagem**: Javascript (Frontend/Backend)<br>
@@ -32,17 +44,17 @@ Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 ### Passo 1: 
 Entre no diretorio do /backend e execute o seguinte comando
 ```terminal
-npm i
+npm install 
 ```
 ### Passo 2:
 Ainda no diretorio do backend, coloque o servidor pra rodar com o comando:
 ```terminal
-node src/server.js
+node src/server.js ou nodemon src/server.js
 ```
 ### Passo 3:
 Em outro terminal entre no diretorio do /frontend e execute o seguinte comando:
 ```terminal
-npm i
+npm install
 ```
 ### Passo 4:
 Ainda no deretorio do /frontend coloque o front para rodar com o comando:
