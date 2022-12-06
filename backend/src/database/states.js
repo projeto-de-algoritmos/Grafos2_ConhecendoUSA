@@ -1,16 +1,5 @@
 exports.cities = [
     {
-        state: 'AL',
-        name: 'Montgomery',
-        zipcode: '36101',
-        edges: [
-            '30301',
-            '39201',
-            '37201',
-            '32301'
-        ]
-    },
-    {
         state: 'WA',
         name: 'Olympia',
         zipcode: '98501',
@@ -140,6 +129,7 @@ exports.cities = [
         ]
     },
     {
+
         state: 'ND',
         name: 'Bismarck',
         zipcode: '58501',
@@ -208,6 +198,247 @@ exports.cities = [
             '87501', // Santa fé - New México - NM
             '70801', // Baton Rouge - Lousiana - LA
             '72201', // Little Rock - Arkansas - AR
+        ]
+    },
+    {
+        state: 'ME',
+        name: 'Augusta',
+        zipcode: '04330',
+        edges: [
+            '03301'
+        ]
+    },
+    {
+        state: 'NH',
+        name: 'Concord',
+        zipcode: '03301',
+        edges: [
+            '04330',
+            '02108',
+            '05601'
+        ]
+    },
+    {
+        state: 'MA',
+        name: 'Boston',
+        zipcode: '02108',
+        edges: [
+            '05601',
+            '03301',
+            '12201',
+            '02901',
+            '06101'
+        ]
+    },
+    {
+        state: 'RI',
+        name: 'Providence',
+        zipcode: '02901',
+        edges: [
+            '02108',
+            '06101'
+        ]
+    },
+    {
+        state: 'CT',
+        name: 'Hartford',
+        zipcode: '06101',
+        edges: [
+            '02901',
+            '02108',
+            '12201'
+        ]
+    },
+    {
+        state: 'VT',
+        name: 'Montpelier',
+        zipcode: '05601',
+        edges: [
+            '02108',
+            '03301',
+            '12201'
+        ]
+    },
+    {
+        state: 'NY',
+        name: 'Albany',
+        zipcode: '12201',
+        edges: [
+            '05601',
+            '02108',
+            '06101',
+            '08601',
+            '17101' // Harrisburg - Pennsylvania - PA
+        ]
+    },
+    {
+        state: 'NJ',
+        name: 'Trenton',
+        zipcode: '08601',
+        edges: [
+            '12201',
+            '17101',
+            '19901' // Dover - Delaware - DE
+        ]
+    },
+    {
+        state: 'PA',
+        name: 'Harrisburg',
+        zipcode: '17101',
+        edges: [
+            '12201',
+            '08601',
+            '19901', // Dover - Delaware - DE
+            '21401', // Annapolis - Maryland - MD
+            '43085', // Columbus - Ohio - OH
+            '25301' // Charleston - West Virginia - WV
+        ]
+    },
+    {
+        state: 'DE',
+        name: 'Dover',
+        zipcode: '19901',
+        edges: [
+            '17101', // Harrisburg - Pennsylvanya - PA
+            '08601', // Trenton - New Jersey - NJ
+            '21401' // Annapolis - Maryland - MD
+        ]
+    },
+    {
+        state: 'MD',
+        name: 'Annapolis',
+        zipcode: '21401',
+        edges: [
+            '19901', // Dover - Delaware - DE
+            '17101', // Harrisburg - Pennsylvanya - PA
+            '25301', // Charleston - West Virginia - WV
+            '23218' // Richmond - Virginia - VA
+        ]
+    },
+    {
+        state: 'VA',
+        name: 'Richmond',
+        zipcode: '23218',
+        edges: [
+            '21401', // Annapolis - Maryland - MD
+            '25301', // Charleston - West Virginia - WV
+            '27601', // Raleigh - North Carolina - NC
+            '40601', // Frankfort - Kentuky - KY
+            '37201' // Nashville - Tennesse - TN
+
+        ]
+    },
+    {
+        state: 'WV',
+        name: 'Charleston',
+        zipcode: '25301',
+        edges: [
+            '17101', // Harrisburg - Pennsylvanya - PA
+            '21401', // Annapolis - Maryland - MD
+            '23218', // Richmond - Virginia - VA
+            '43085', // Columbus - Ohio - OH
+            '40601', // Frankfort - Kentuky - KY
+            '37201' // Nashville - Tennesse - TN
+        ]
+    },
+    {
+        state: 'NC',
+        name: 'Raleigh',
+        zipcode: '27601',
+        edges: [
+            '23218', // Richmond - Virginia - VA
+            '37201', // Nashville - Tennesse - TN
+            '29201', // Columbia - South Carolina - SC
+            '30301' // Atlanta - Georgia - GA
+        ]
+    },
+    {
+        state: 'SC',
+        name: 'Columbia',
+        zipcode: '29201',
+        edges: [
+            '27601', // Raleigh - North Carolina - NC
+            '30301' // Atlanta - Georgia - GA
+        ]
+    },
+    {
+        state: 'GA',
+        name: 'Atlanta',
+        zipcode: '30301',
+        edges: [
+            '36101', // Montgomery - Alabama - AL
+            '32301', // Tallahassee - Florida - FL
+            '29201' // Columbia - South Carolina - SC
+        ]
+    },
+    {
+        state: 'FL',
+        name: 'Tallahassee',
+        zipcode: '32301',
+        edges: [
+            '36101', // Montgomery - Alabama - AL
+            '30301' // Atlanta - Georgia - GA
+        ]
+    },
+    {
+        state: 'TN',
+        name: 'Nashville',
+        zipcode: '37201',
+        edges: [
+            '27601', // Raleigh - North Carolina - NC
+            '30301', // Atlanta - Georgia - GA
+            '36101', // Montgomery - Alabama - AL
+            '39201', // Jackson - Mississipi - MS
+            '72201', // Little Rock - Arkansas - AR
+            '65101', // Jefferson City - Missouri - MO
+            '40601' // Frankfort - Kentuky - KY
+        ]
+    },
+    {
+        state: 'KY',
+        name: 'Frankfort',
+        zipcode: '40601',
+        edges: [
+            '43085', // Columbus - Ohio - OH
+            '25301', // Charleston - West Virginia - WV
+            '23218', // Richmond - Virginia - VA
+            '37201', // Nashville - Tennesse - TN
+            '65101', // Jefferson City - Missouri - MO
+            '62701', // Springfield - Illinoi - IL
+            '46201' // Indianapolis - Indiana - IN
+        ]
+    },
+    {
+        state: 'OH',
+        name: 'Columbus',
+        zipcode: '43085',
+        edges: [
+            '17101', // Harrisburg - Pennsylvania - PA
+            '25301', // Charleston - West Virginia - WV
+            '40601', // Frankfort - Kentuky - KY
+            '46201', // Indianapolis - Indiana - IN
+            '48901' // Lansing - Michigan - MI
+        ]
+    },
+    {
+        state: 'MI',
+        name: 'Lansing',
+        zipcode: '48901',
+        edges: [
+            '43085', // Columbus - Ohio - OH
+            '46201' // Indianapolis - Indiana - IN
+        ]
+    },
+    {
+        state: 'AL',
+        name: 'Montgomery',
+        zipcode: '36101',
+        edges: [
+            '30301', // Atlanta - Georgia - GA
+            '37201', // Nashville - Tennesse - TN
+            '32301', // Tallahassee - Florida - FL
+            '39201', // Jackson - Mississipi - MS
+
         ]
     },
     // {
