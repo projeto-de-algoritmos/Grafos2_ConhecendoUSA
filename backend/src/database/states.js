@@ -34,8 +34,8 @@ exports.cities = [
         edges: [
             '83701',
             '82001',
-            // '58501',
-            //'57501'
+            '58501',
+            '57501'
         ]
     },
     {
@@ -73,8 +73,8 @@ exports.cities = [
             '83701',
             '84101',
             '80201',
-            //'68501',
-            //'57501'
+            '68501',
+            '57501'
         ]
     },
     {
@@ -111,9 +111,9 @@ exports.cities = [
             '84101',
             '85001',
             '87501',
-            //'68501',
-            //'66601',
-            //'73101'
+            '68501',
+            '66601',
+            '73101'
         ]
     },
     {
@@ -124,8 +124,8 @@ exports.cities = [
             '80201',
             '84101',
             '85001',
-            //'73101',
-            //'73301'
+            '73101',
+            '73301'
         ]
     },
     {
@@ -441,12 +441,128 @@ exports.cities = [
 
         ]
     },
-    // {
-    //     state: '',
-    //     name: '',
-    //     zipcode: '',
-    //     edges: [
-    //         ''
-    //     ]
-    // },
+    {
+        state: 'MN',
+        name: 'Saint Paul',
+        zipcode: '55101',
+        edges: [
+            '58501', // Bismark - North Dakota - ND
+            '57501', // Pierre - South Dakote  - SD
+            '68501', // Lincoln - Nebraska - NE
+            '50301', // Des moines - Iowa - IA
+            '53701', // Madison - Wisconsin - WI
+        ]
+    },
+    {
+        state: 'IA',
+        name: 'Des moines',
+        zipcode: '50301',
+        edges: [
+            '55101', // Saint Paul - Minnesota - MN
+            '57501', // Pierre - South Dakote  - SD
+            '68501', // Lincoln - Nebraska - NE
+            '65101', // Jefferson City - Missouri - MO
+            '62701', // Springfield - Illinoi - IL
+            '53701', // Madison - Wisconsin - WI
+        ]
+    },
+    {
+        state: 'MO',
+        name: 'Jefferson City',
+        zipcode: '65101',
+        edges: [
+            '50301', // Des moines - Iowa - IA
+            '68501', // Lincoln - Nebraska - NE
+            '66601', // Tokepa - Kansas - KS
+            '73101', // Oklahoma City - Oklahoma - OK
+            '72201', // Little Rock - Arkansas - AR
+            '37201', // Nashville - Tennesse - TN
+            '40601', // Frankfort - Kentuky - KY
+            '62701', // Springfield - Illinoi - IL
+        ]
+    },
+    {
+        state: 'AR',
+        name: 'Little Rock',
+        zipcode: '72201',
+        edges: [
+            '65101', // Jefferson City - Missouri - MO
+            '73101', // Oklahoma City - Oklahoma - OK
+            '73301', // Austin - Texas - TX
+            '70801', // Baton Rouge - Lousiana - LA
+            '39201', // Jackson - Mississipi - MS
+            '37201', // Nashville - Tennesse - TN
+        ]
+    },
+    {
+        state: 'LA',
+        name: 'Baton Rouge',
+        zipcode: '70801',
+        edges: [
+            '72201', // Little Rock - Arkansas - AR
+            '73301', // Austin - Texas - TX
+            '39201', // Jackson - Mississipi - MS
+        ]
+    },
+    {
+        state: 'WI',
+        name: 'Madison',
+        zipcode: '53701',
+        edges: [
+            '55101', // Saint Paul - Minnesota - MN
+            '50301', // Des moines - Iowa - IA
+            '62701', // Springfield - Illinoi - IL
+            '48901' // Lansing - Michigan - MI
+        ]
+    },
+    {
+        state: 'IL',
+        name: 'Springfield',
+        zipcode: '62701',
+        edges: [
+            '53701', // Madison - Wisconsin - WI
+            '50301', // Des moines - Iowa - IA
+            '65101', // Jefferson City - Missouri - MO
+            '48901', // Lansing - Michigan - MI
+            '40601', // Frankfort - Kentuky - KY
+            '46201', // Indianapolis - Indiana - IN
+            '48901' // Lansing - Michigan - MI
+        ]
+    },
+    {
+        state: 'IL',
+        name: 'Springfield',
+        zipcode: '62701',
+        edges: [
+            '53701', // Madison - Wisconsin - WI
+            '50301', // Des moines - Iowa - IA
+            '65101', // Jefferson City - Missouri - MO
+            '48901', // Lansing - Michigan - MI
+            '40601', // Frankfort - Kentuky - KY
+            '46201', // Indianapolis - Indiana - IN
+            '48901' // Lansing - Michigan - MI
+        ]
+    },
+    {
+        state: 'IN',
+        name: 'Indianapolis',
+        zipcode: '46201',
+        edges: [
+            '48901', // Lansing - Michigan - MI
+            '62701', // Springfield - Illinoi - IL
+            '40601', // Frankfort - Kentuky - KY
+            '43085', // Columbus - Ohio - OH
+        ]
+    },
+    {
+        state: 'MS',
+        name: 'Jackson',
+        zipcode: '39201',
+        edges: [
+            '37201', // Nashville - Tennesse - TN
+            '72201', // Little Rock - Arkansas - AR
+            '70801', // Baton Rouge - Lousiana - LA
+            '36101', // Montgomery - Alabama - AL
+        ]
+    },
 ]
