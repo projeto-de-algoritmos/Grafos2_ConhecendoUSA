@@ -19,11 +19,6 @@ function init() {
   }
 }
 
-function getNodeInformation(nodeZipcode) {
-  let nodePosition = cities.findIndex(p => p.zipcode == nodeZipcode);
-  return cities[nodePosition];
-}
-
 let shortestDistanceNode = (distances, visited) => {
   // create a default value for shortest
 	let shortest = null;

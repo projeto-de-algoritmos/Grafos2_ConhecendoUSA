@@ -70,6 +70,10 @@ Caso não abra automáticamente, para acessar a aplicação abra seu navegador n
 
 ## Vídeo de Apresentação
 
+- Acesse pelo [Sharepoint](https://unbbr.sharepoint.com/sites/PA-Gravaes/_layouts/15/stream.aspx?id=%2Fsites%2FPA%2DGravaes%2FDocumentos%20Compartilhados%2FGeneral%2FRecordings%2FMeeting%20in%20%5FGeneral%5F%2D20221205%5F222404%2DGrava%C3%A7%C3%A3o%20de%20Reuni%C3%A3o%2Emp4)
 
+- Clique [aqui](assets/video_01.mp4) para baixar o vídeo.
+
+- Caso nenhuma das opções esteja disponível, o vídeo encontrasse dentro do repositório no caminho "assets/video_01.mp4".
 
 
